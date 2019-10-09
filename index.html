@@ -2,11 +2,33 @@
 <html lang="pl-PL" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Todos App</title>
   </head>
   <body>
-
+    <!-- container div -->
+    <div class="container">
+      <header class="text-center text-light my-4">
+        <h1 class="mb-4">Todo List!</h1>
+        <form class="search">
+          <input class="form-control m-auto" name="search" type="text" placeholder="Search...">
+        </form>
+      </header>
+      <!-- Item place (with default item) -->
+      <ul class="todos list-group list-group-flush mx-auto text-light">
+        <li class="list-group-item d-flex justify-content-between align-items-center pl-4">
+          <span>Add something...</span>
+          <i class="delete far fa-minus-square"></i>
+        </li>
+      </ul>
+      <!-- Item add -->
+      <form class="add text-center my-4">
+        <label class="text-light">Add a new todo...</label>
+        <input class="form-control m-auto" type="text" name="add" />
+      </form>
+    </div>
 
     <script src="app.js" charset="utf-8"></script>
   </body>
