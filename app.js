@@ -21,3 +21,10 @@ addForm.addEventListener('submit', ev => {
     addForm.reset();
   }
 });
+
+//Deleting todos.
+list.addEventListener('click', ev => {
+  if (ev.target.classList.contains('delete')) {
+    ev.target.parentElement.remove();
+  }
+});
