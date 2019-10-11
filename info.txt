@@ -1,0 +1,8 @@
+Todo app with basic search field.
+
+Tech:
+  Bootstrap
+  Fontawesome
+
+Based on the net ninja course. 
+11-10-19.
